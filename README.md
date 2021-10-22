@@ -2,7 +2,7 @@
 
 # App
 
-# Personal Data
+- RENDERIZA los forms.
 
 - RECIBE Nombre, Last Name, Birthday, Email.
 - cuando el usuario introduzca la fecha en el birthdate, a su lado
