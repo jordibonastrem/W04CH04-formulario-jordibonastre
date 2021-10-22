@@ -1,5 +1,3 @@
-import { render } from "@testing-library/react";
-
 const AccessData = ({ username, password, repeatPassword }) => {
   return (
     <form className="row g-3 needs-validation" novalidate>
