@@ -44,3 +44,5 @@ const LoginUser = () => {
     </form>
   );
 };
+
+export default LoginUser;
