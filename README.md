@@ -9,6 +9,10 @@
   se RENDERIZA su edad.
 -
 
+# UserContext
+
+- context con los datos que comparten access data y login.
+
 # Access Data
 
 - RECIBE username, password y repeat password

@@ -1,11 +1,15 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import AccessData from "./components/AccessData/AccessData";
+import PersonalData from "./components/PersonalData/PersonalData";
 
 function App() {
+  const testUser = {
+    username: "Jordi",
+    password: "Bonastre",
+  };
   return (
     <>
-      <AccessData></AccessData>
+      <PersonalData></PersonalData>
     </>
   );
 }
