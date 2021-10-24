@@ -1,56 +1,50 @@
-const AccessData = ({ username, password, repeatPassword }) => {
+const AccessData = () => {
   return (
-    <form className="row g-3 needs-validation" novalidate>
-      <div className="col-md-4">
-        <label for="validationCustomUsername" className="form-label">
+    <form>
+      <h1>Access Data</h1>
+      <div className="mb-3">
+        <label htmlFor="username" className="form-label">
           Username
         </label>
-        <div className="input-group has-validation">
-          <input
-            type="text"
-            className="form-control"
-            id="validationCustomUsername"
-            aria-describedby="inputGroupPrepend"
-            required
-          ></input>
-          <div className="invalid-feedback">Please choose a username.</div>
-        </div>
+        <input
+          type="text"
+          name="username"
+          id="username"
+          className="form-control"
+          placeholder="Enter your username"
+          autoComplete="off"
+          required
+        />
       </div>
-      <div className="col-md-4">
-        <label for="validationCustomUsername" className="form-label">
+      <div className="mb-3">
+        <label htmlFor="password" className="form-label">
           Password
         </label>
-        <div className="input-group has-validation">
-          <input
-            type="password"
-            className="form-control"
-            id="validationCustomUsername"
-            aria-describedby="inputGroupPrepend"
-            required
-          ></input>
-          <div className="invalid-feedback">Please choose a password.</div>
-        </div>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          className="form-control"
+          placeholder="Enter your last password"
+          autoComplete="off"
+          required
+        />
       </div>
-      <div className="col-md-4">
-        <label for="validationCustomUsername" className="form-label">
-          Repeat Password
+      <div className="mb-3">
+        <label htmlFor="repeat-password" className="form-label">
+          Repeat password
         </label>
-        <div className="input-group has-validation">
-          <input
-            type="password"
-            className="form-control"
-            id="validationCustomUsername"
-            aria-describedby="inputGroupPrepend"
-            required
-          ></input>
-          <div className="invalid-feedback">Please choose a password.</div>
-        </div>
+        <input
+          type="password"
+          name="repeat-password"
+          id="repeat-password"
+          className="form-control"
+          placeholder="Enter your last repeat-password"
+          autoComplete="off"
+          required
+        />
       </div>
-      <div className="col-12">
-        <button className="btn btn-primary" type="submit">
-          Submit form
-        </button>
-      </div>
+      <input type="submit" value="Next" className="btn btn-primary" />
     </form>
   );
 };
