@@ -1,7 +1,6 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import AccessData from "./components/AccessData/AccessData";
-import UserContext from "./components/context/UserContext";
+import PersonalData from "./components/PersonalData/PersonalData";
 
 function App() {
   const testUser = {
@@ -10,7 +9,7 @@ function App() {
   };
   return (
     <>
-      <UserContext.Provider value={testUser}></UserContext.Provider>
+      <PersonalData></PersonalData>
     </>
   );
 }
